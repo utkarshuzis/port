@@ -21,16 +21,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../v2_6.png'); /* Adjust path if needed */
+    background-image: url('./v2_6.png'); /* Adjust path if needed */
     background-size: cover; /* Or 'contain' depending on how you want it to fit */
     background-position: center;
     opacity: 0.2; /* 20% opacity */
     z-index: 0; /* Behind all other elements */
-}
-
-.v2_2 {
-    /* If v2_2.png is an additional layer or decoration, style it here */
-    display: none; /* Remove or style if not needed */
 }
 
 .v1_5, .v1_7, .v2_4 {
@@ -40,8 +35,8 @@ body {
 
 .v1_5 {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 20px; /* Adjust based on Figma */
+    left: 20px; /* Adjust based on Figma */
     font-size: 16px;
     line-height: 1.2;
     z-index: 10; /* Above images and background */
@@ -49,19 +44,33 @@ body {
 
 .v1_7 {
     position: absolute;
-    top: 100px;
-    left: 50px;
+    z-index: 10; /* Above images and background */
     font-size: 24px;
     font-weight: bold;
     line-height: 1.5;
-    z-index: 10; /* Above images and background */
     white-space: pre-wrap; /* Preserve line breaks and spaces from HTML */
+}
+
+/* Break down v1_7 text into specific lines for precise positioning */
+.v1_7::before {
+    content: "the archive";
+    position: absolute;
+    top: 120px; /* Adjust based on Figma */
+    left: 50px; /* Adjust based on Figma */
+}
+
+.v1_7::after {
+    content: "makes you         you              get over with it\n\n         but you can’t so it helps\n         you to\n        get over\n         with it";
+    position: absolute;
+    top: 150px; /* Adjust based on Figma */
+    left: 150px; /* Adjust based on Figma */
+    white-space: pre-wrap; /* Preserve line breaks and spaces */
 }
 
 .v2_4 {
     position: absolute;
-    bottom: 20px;
-    left: 50px;
+    bottom: 20px; /* Adjust based on Figma */
+    left: 50px; /* Adjust based on Figma */
     font-size: 14px;
     z-index: 10; /* Above images and background */
 }
@@ -73,18 +82,18 @@ body {
 }
 
 .v1_9 {
-    top: 150px;
-    left: 50px;
+    top: 150px; /* Adjust based on Figma */
+    left: 50px; /* Adjust based on Figma */
 }
 
 .v1_10 {
-    top: 250px;
-    left: 200px;
+    top: 250px; /* Adjust based on Figma */
+    left: 200px; /* Adjust based on Figma */
 }
 
 .v1_11 {
-    top: 350px;
-    left: 350px;
+    top: 350px; /* Adjust based on Figma */
+    left: 350px; /* Adjust based on Figma */
 }
 
 .v1_9 img, .v1_10 img, .v1_11 img {
